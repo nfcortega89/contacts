@@ -32,7 +32,8 @@
             $('.contactlist ul').append("<a href='#' id='" + count + "'>" + person.firstname + " " + person.lastname + "</a>");
             console.log(person);
             list.push(person);            
-            console.log(count)
+            console.log(count);
+            $('input').val('');
         })
 
         $('.contactlist').on('click', 'a', function(e) {
